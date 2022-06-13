@@ -1,0 +1,7 @@
+.top-navigation-bar-container {
+    background-color: salmon;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
