@@ -6,4 +6,80 @@
 
 .profile-page-main-content {
     margin: 0px 0px 0px 250px;
+    width: 100%;
+}
+
+/************************************************************/
+.profile-page-main-content-outer-holder {
+
+}
+
+.profile-details-container {
+    display: flex;
+}
+
+.profile-details-container img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.profile-details-statistics {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.profile-details-statistics p {
+    margin: 0px 50px 0px 0px;
+}
+
+.profile-details-container-right {
+    margin-top: 20px;
+}
+
+.profile-details-container-name {
+    margin-top: 30px;
+    width: fit-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.profile-details-container-name p {
+    margin: 0px 10px 0px 0px;
+    font-weight: 700;
+}
+
+.profile-details-container-name button {
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.profile-details-container-nickname {
+    font-weight: 400;
+}
+
+.profile-details-container-description {
+    max-width: 600px;
+    margin: 0px 20px 0px 20px;
+}
+
+/* */
+.profile-page-content-controller {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-page-content-controller p {
+    border-bottom: 1px solid black;
+    padding: 0px 5px 0px 5px;
+    font-weight: 500;
 }
