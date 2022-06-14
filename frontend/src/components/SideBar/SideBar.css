@@ -4,6 +4,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     position: fixed;
+    border-right: 1px solid silver;
 }
 
 .sidebar-container-separator {

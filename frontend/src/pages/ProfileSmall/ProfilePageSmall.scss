@@ -1,0 +1,127 @@
+.profile-page-small-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-page-small-picture-container {
+    margin: 20px;
+}
+
+.profile-page-small-picture-container img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.profile-page-small-status-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.profile-page-small-status-row {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+}
+
+.profile-page-small-status-row p {
+
+}
+
+.profile-page-small-name {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.profile-page-small-nickname {
+    font-weight: 500;
+}
+
+.profile-page-small-user-interaction-controller {
+    
+}
+
+.profile-page-small-user-interaction-controller button {
+    background-color: silver;
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.profile-page-small-description-container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 25px 0px 25px;
+    max-width: 500px;
+}
+
+.profile-page-small-description-container p {
+    text-align: center;
+}
+
+.profile-page-small-status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-page-small-content-controller-row {
+    display: flex;
+    margin: 15px 0px 5px 0px;
+    height: 50px;
+    width: 100%;
+}
+
+.profile-page-small-content-controller-row .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-bottom: 2px solid silver;
+    border-radius: 0px;
+}
+
+.profile-page-small-content-controller-row .col svg {
+    height: 20px;
+    width: 20px;
+    fill: silver;
+    color: silver;
+}
+
+.profile-page-small-content-controller-row .col p {
+    color: silver;
+    font-weight: 500;
+}
+
+.profile-page-small-content-controller-row hr {
+    width: 100%;
+
+}
+
+.profile-page-small-content-controller-row p {
+    padding: 0px 5px 0px 5px;
+}
+
+.profile-page-small-content-controller-container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.profile-page-small-content-controller-row {
+    max-width: 750px;
+}
