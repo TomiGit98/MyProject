@@ -1,4 +1,3 @@
-import { Container, Row, Col } from "react-bootstrap";
 import SideBar from "../../components/SideBar/SideBar";
 import TopNavigationBar from "../../components/TopNavigationBar/TopNavigationBar";
 
@@ -17,7 +16,7 @@ const ProfilePage = () => (
                 <div className="profile-page-main-content-outer-holder">
                     <div className="profile-details-container">
                         <div className="profile-details-container-left">
-                            <img src={profile} />
+                            <img src={profile} alt="profile" />
                         </div>
                         <div className="profile-details-container-right">
                             <div className="profile-details-statistics">
@@ -45,7 +44,6 @@ const ProfilePage = () => (
                 </div>
                 <div className="profile-page-content-container">
                     
-
                 </div>
             </div>
         </div>

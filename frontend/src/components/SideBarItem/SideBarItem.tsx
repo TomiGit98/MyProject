@@ -1,7 +1,5 @@
 import "./SideBarItem.scss";
 
-import { Component, SVGProps } from "react";
-
 interface ItemProperties {
     text: string;
     icon: any;
