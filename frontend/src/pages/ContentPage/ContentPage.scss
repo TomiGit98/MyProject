@@ -12,12 +12,12 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: #cccccc;
+    background-color: #eeeeee;
 }
 
 .content-page-main-content-positioning-container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1400px;
 }
 
 .content-page-main-content hr {
@@ -43,19 +43,6 @@
     padding: 0px;
 }
 
-.content-container-left {
-    background-color: black;
-    height: calc((100vh - 60px) * 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-.content-container-left img {
-    height: calc((100vh - 60px) * 0.8);
-}
 
 $cols: "col", "col-1", "col-2", "col-3",
     "col-4", "col-5", "col-6",
@@ -78,3 +65,4 @@ $cols: "col", "col-1", "col-2", "col-3",
     object-fit: cover;
     border-radius: 50%;
 }
+

@@ -5,8 +5,9 @@ import "./ContentPage.scss";
 
 import world from "../../images/world.jpg"
 import owl2 from "../../images/owl.jpg"
-import girl from "../../images/girl.jpg"
+
 import { ContentComment } from "../../components/ContentComment/ContentComment";
+import { ContentPageMainContent } from "../../components/ContentPageMainContent/ContentPageMainContent";
 
 export const ContentPage: React.FC = () => (
     <div>
@@ -14,29 +15,11 @@ export const ContentPage: React.FC = () => (
             <TopNavigationBar />
         </div>
         <div className="content-page-container-content">
-            <SideBar />
-            <div className="content-page-main-content">
-                <div className="content-page-main-content-positioning-container">
-                    <Container className="content-container" fluid>
-                        <Row>
-                            <Col xs={12}>
-                                <div className="content-container-left">
-                                    <img src={girl} />
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-                < hr />
-                <div className="conten-page-comments-container">
-                    <ContentComment />
-                    <ContentComment />
-                    <ContentComment />
-                    <ContentComment />
-                    <ContentComment />
-                </div>
-
+            <div className="d-none d-md-block">
+                <SideBar />
             </div>
+
+            <ContentPageMainContent />
         </div>
     </div>
 );
