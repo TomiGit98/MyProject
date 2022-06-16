@@ -1,14 +1,28 @@
 .login-page-container {
-    background-color: #eeeeee;
-    /*background-color: #663dff;
-    background-color: #8800ff;
-    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);*/
+    /*background-color: #eeeeee;*/
+    /*background-color: #663dff;*/
+    /*background-color: #8800ff;*/
+    /*background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);*/
     width: 100vw;
     height: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 6px;   
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eeeeee;
 }
 
 /* Big size config */
@@ -27,10 +41,19 @@
     margin: 30px 0px 30px 0px;
 }
 
+/**//**//**//**//**/
+
 .title-of-the-app {
     font-size: x-large;
-    margin: 30px 0px 30px 0px;
+    margin: 20px 0px 0px 0px;
     font-weight:  900;
+}
+
+.login-component__symbol-container {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin: 20px 0px 20px 0px;
 }
 
 .login-page-container__login-component--pc p {
@@ -40,11 +63,16 @@
 .login-page-container__login-component--pc input {
     background-color: #efefef;
     height: 40px;
+    min-height: 40px;
     width: 300px;
     border-radius: 5px;
     margin: 10px 0px 10px 0px;
     padding: 0px 7px 0px 7px;
     border: 1px solid #cccccc;
+}
+
+.login-page-container__login-component--pc input:focus {
+    outline: 1px solid silver;
 }
 
 .forgot-password-container {
@@ -55,6 +83,7 @@
 .forgot-password-container a {
     font-size: small;
     color: silver;
+    font-weight: 100;
 }
 
 .forgot-password-container {
@@ -104,9 +133,7 @@
     transition: all 0.1s ease-in;
 }
 
-.login-component__options-controller--pc {
-    background-color: #8800ff;
-}
+
 
 .login-component__options-controller--pc p:first {
     font-size: small;
@@ -116,10 +143,10 @@
     font-size: small;
 }
 
-.login-page-container__login-component--pc a {
-    font-weight: 100;
+.registration-link a {
+    font-weight: 500;
     transition: all 0.1s ease-in;
-    color: silver;
+    color: #8800ff;
 }
 
 .login-page-container__login-component--pc a:hover {
@@ -139,26 +166,29 @@
     font-size: small;
 }
 
-.copyright {
-    margin: 100px 0px 0px 0px;
+.login-component__footer-container--pc {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0px 0px 20px 0px;
+}
+
+
+.login-component__footer-container--pc .copyright {
     font-size: small;   
-    font-weight: 200;
+    font-weight: 100;
 }
 
 /* #################################################### Mobile size config #################################################### */
 .login-page-container__login-component--mobile {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.login-page-container__login-component--mobile hr {
-    width: 300px;
-    margin: 10px 0px 50px 0px;
 }
 
 .login-page-container__login-component--mobile p {
@@ -167,21 +197,26 @@
     padding: 0px;
 }
 
-.login-page-container__login-component--mobile p:first-child {
+.login-page-container__login-component--mobile .title-of-the-app {
     font-size: x-large;
-    font-weight: 700;
-    margin: 50px 0px 50px 0px;
+    margin: 20px 0px 0px 0px;
+    font-weight:  900;
 }
 
 .login-page-container__login-component--mobile input {
-    background-color: #eeeeee;
+    background-color: #efefef;
     height: 40px;
     min-height: 40px;
     width: 300px;
     border-radius: 5px;
-    margin: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
     padding: 0px 7px 0px 7px;
     border: 1px solid #cccccc;
+    /*outline: 2px solid #eeeeee;*/
+}
+
+.login-page-container__login-component--mobile input:focus {
+    outline: 1px solid silver;
 }
 
 .login-component__button-container--mobile {
@@ -209,23 +244,22 @@
     transition: all 0.1s ease-in;
 }
 
-.login-page-container__login-component--mobile a {
-    color: black;
-    font-weight: 500;
-    transition: all 0.1s ease-in;
-}
-
-.login-page-container__login-component--mobile a:hover {
+.registration-link a {
     color: #8800ff;
-    transition: all 0.1s ease-in;
-}
-
-.login-page-container__login-component--mobile .copyright {
-    margin: 100px 0px 0px 0px;
-    position: fixed;
-    bottom: 0;
-}
-
-.login-page-container__login-component--mobile .title-of-the-app {
     font-weight: 500;
+}
+
+.login-component__footer-container--mobile {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 100px 0px 0px 0px;
+}
+
+
+.login-component__footer-container--mobile .copyright {
+    font-size: small;   
+    font-weight: 100;
 }
