@@ -1,0 +1,214 @@
+.profile-page-container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-page-container__profile-container {
+    max-width: 1000px;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container__header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header__upper-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.header__upper-container img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    /*margin-right: 20px;*/
+}
+
+.upper-container__profile-container {
+    height: 100%;
+    width: 100%;
+    max-width: 175px;
+    max-height: 175px;
+    
+}
+
+.upper-container__details-container {
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.details-container__statistic-container {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.statistic-container__statistic-item {
+    display: flex;
+    margin: 0px 35px 0px 0px;
+}
+
+.statistic-container__statistic-item p:first-child {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.statistic-container__statistic-item p {
+    font-weight: 100;
+}
+
+.details-container__names-container {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.details-container__names-container p:first-child {
+    font-size: larger;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.details-container__names-container button {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8800ff;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.details-container__nick-name {
+    font-weight: 100;
+}
+
+.header__description-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.description-container__description {
+    margin-left: 0px;
+}
+
+.description-container__description p {
+    font-size: medium;
+    font-weight: 100;
+}
+
+/* ///////////////////////////////////////////////// */
+
+.profile-container__content-controller {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.content-controller__controller-item {
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    width: 100px;
+    margin: 0px 0px 0px 0px;
+}
+
+.content-controller__controller-item p {
+    font-size: small;
+    font-weight: 500;
+    color: #eeeeee;
+    transition: all 0.25s ease;
+}
+
+/**/
+.content-controller__controller-item svg {
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+    color: #eeeeee;
+    transition: all 0.25s ease;
+}
+
+.content-controller__controller-item svg path {
+    fill: #eeeeee;
+    transition: all 0.25s ease;
+}
+/**/
+
+.controller-item__item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.controller-item__bottom-border {
+    height: 1px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #eeeeee;
+    transition: all 0.25s ease;
+}
+
+
+
+
+.content-controller__controller-item:hover p {
+    color: black;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.content-controller__controller-item:hover .controller-item__bottom-border {
+    background-color: black;
+    height: 2px;
+    transition: all 0.25s ease;
+}
+
+.content-controller__controller-item:hover .controller-item__item-container svg path {
+    fill: black;
+    transition: all 0.25s ease;
+}
+
+/* /////////////////////////////////////////// */
+.profile-container__content-container {
+    background-color: white;
+}
+
+/*.container-fluid {
+    margin: 0px;
+    padding: 0px;
+    background-color: #8800ff;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100px;
+    
+}
+
+.row {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    background-color: #8800ff;
+}*/

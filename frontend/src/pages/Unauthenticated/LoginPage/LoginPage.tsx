@@ -9,8 +9,8 @@ export const LoginPage: React.FC = () => (
             <div className="login-component__symbol-container">
                 <img src={snap} alt="logo"/>
             </div>
-            <input placeholder="e-mail, username" className="shadow-sm" />
-            <input placeholder="password" className="shadow-sm" />
+            <input placeholder="E-mail or username" className="shadow-sm" />
+            <input placeholder="Password" className="shadow-sm" />
             <div className="forgot-password-container">
                 <a href="/" className="forgot-password">Forgot your password?</a>
             </div>
