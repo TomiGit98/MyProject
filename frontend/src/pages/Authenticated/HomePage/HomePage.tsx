@@ -1,4 +1,5 @@
 import { NavigationBar } from "../../../components/NavigationBar/NavigationBar";
+import { Post } from "../../../components/Post/Post";
 import "./HomePage.scss";
 
 export const HomePage = () => {
@@ -7,9 +8,11 @@ export const HomePage = () => {
         <div className="home-page">
             <NavigationBar />
             <div className="home-page__middle-container">
-                <p>asdasdas</p>
-                <p>asdasdas</p>
-                <p>asdasdas</p>
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
             </div>
         </div>
     );
