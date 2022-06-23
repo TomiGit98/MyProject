@@ -1,0 +1,77 @@
+$cols: "col", "col-2", "col-3", 
+        "col-4", "col-5", "col-6", 
+        "col-7", "col-8", "col-9", 
+        "col-10", "col-11", "col-12";
+
+@each $col in $cols {
+    .#{$col} {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.new-profile-content {
+
+}
+
+.new-profile-content img {
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.new-profile-content__controller-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.controller-container__status-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.controller-container__status-item svg {
+    height: 20px;
+    width: 20px;
+    margin: 0px 3px 0px 0px;
+}
+
+.controller-container__status-item p {
+    font-size: small;
+    font-weight: 700;
+}
+
+
+
+
+.content__container {
+    position: relative;
+    display: flex;
+    margin: 1px;
+}
+
+.container__content-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.container__content-item svg {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    fill: white;
+}
+
+.container__content-item p {
+    color: white;
+    font-size: small;
+    font-weight: 700;
+}

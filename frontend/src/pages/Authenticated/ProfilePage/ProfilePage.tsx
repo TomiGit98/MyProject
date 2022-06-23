@@ -12,8 +12,9 @@ import profilephoto5 from "../../../images/profile-photo-5.png"
 import { ReactComponent as GridIcon } from "../../../svgs/grid2.svg";
 import { ReactComponent as LockIcon } from "../../../svgs/lock.svg";
 import { ReactComponent as VideoIcon } from "../../../svgs/video.svg";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { ProfileContent } from "../../../components/ProfileContent/ProfileContent";
+import { ProfileContentSmall } from "../../../components/ProfileContentSmall/ProfileContentSmall";
 
 export const ProfilePage: React.FC = () => (
     <div className="profile-page-container">
@@ -91,8 +92,74 @@ export const ProfilePage: React.FC = () => (
                 </Container>
             </div>
         </div>
-        <div className="d-flex d-sm-none profile-page-container__profile-container">
-            <p>Mobilos verzió bazdmeg</p>
+        <div className="d-flex d-sm-none profile-page-container__profile-container--mobile">
+            <img src={profile} alt="profile" className="shadow-md" />
+            <p className="profile-container__name">Emily Becktwitch</p>
+            <Container className="details-container__statistic-container--mobiles">
+                <Row>
+                    <Col className="statistic-container__statistic-item--mobile">
+                        <p>127K</p>
+                        <p>Like</p>
+                    </Col>
+                    <Col className="statistic-container__statistic-item--mobile">
+                        <p>785</p>
+                        <p>Friends</p>
+                    </Col>
+                    <Col className="statistic-container__statistic-item--mobile">
+                        <p>1.2M</p>
+                        <p>Followers</p>
+                    </Col>
+                </Row>
+            </Container>
+            <button className="shadow-md">Follow</button>
+            <div className="header__description-container--mobile">
+                <div className="description-container__description--mobile">
+                    <p>Instagram: makkadriennofficial</p>
+                    <p>Koncert rendelés a: koncert@koncertrendeles.hu ☾</p>
+                    <p>Budapest🌙</p>
+                    <p>20 years</p>
+                </div>
+            </div>
+            <Container className="profile-container__content-controller--mobile" fluid>
+                <Row>
+                    <Col className="content-controller__controller-item--mobile">
+                        <div className="controller-item__bottom-border" />
+                        <div className="controller-item__item-container--mobile">
+                            <GridIcon />
+                        </div>
+                        <div className="controller-item__bottom-border" />
+                    </Col>
+                    <Col className="content-controller__controller-item--mobile">
+                        <div className="controller-item__bottom-border" />
+                        <div className="controller-item__item-container--mobile">
+                            <VideoIcon />
+                        </div>
+                        <div className="controller-item__bottom-border" />
+                    </Col>
+                    <Col className="content-controller__controller-item--mobile">
+                        <div className="controller-item__bottom-border" />
+                        <div className="controller-item__item-container--mobile">
+                            <LockIcon />
+                        </div>
+                        <div className="controller-item__bottom-border" />
+                    </Col>
+                </Row>
+            </Container>
+            <div className="profile-container__content-container--mobile">
+                <Container fluid>
+                    <Row>
+                        <ProfileContentSmall img={profilephoto1} type="video" />
+                        <ProfileContentSmall img={profilephoto2} type="photo" />
+                        <ProfileContentSmall img={profilephoto3} type="photo" />
+                        <ProfileContentSmall img={profilephoto4} type="multi-photo" />
+                        <ProfileContentSmall img={profilephoto5} type="video" />
+                        <ProfileContentSmall img={profilephoto4} type="photo" />
+                        <ProfileContentSmall img={profilephoto5} type="multi-photo" />
+                        <ProfileContentSmall img={profilephoto4} type="photo" />
+                        <ProfileContentSmall img={profilephoto5} type="video" />
+                    </Row>
+                </Container>
+            </div>
         </div>
-    </div>
+    </div >
 );
