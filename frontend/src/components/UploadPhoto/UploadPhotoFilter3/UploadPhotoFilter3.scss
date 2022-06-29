@@ -1,0 +1,26 @@
+.upload-form-container__right-upload-col svg {
+    width: 35px;
+    height: 35px;
+}
+
+.right-upload-col__navigator-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right-upload-col__navigator-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-upload-col__navigator-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.upload-form-container__right-upload-col {
+    background-color: aqua;
+}

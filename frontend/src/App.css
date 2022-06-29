@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Nunito;
+    src: url("./fonts/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: NunitoItalic;
+    src: url("./fonts/Nunito-Italic-VariableFont_wght.ttf");
+}
+
+* {
+    font-family: Nunito;
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
+    background-color: rebeccapurple;
+    color: antiquewhite;
+    width: 300px;
+    height: 200px;
+    top: '50%';
+    left: '50%';
+    right: 'auto';
+    bottom: 'auto';
+    margin-right: '-50%';
+    transform: 'translate(-50%, -50%)';
+}
+
+.ReactModal__Html--open {
+    background-color: aquamarine;
+    width: 300px;
+    height: 200px;
+    top: '50%';
+    left: '50%';
+    right: 'auto';
+    bottom: 'auto';
+    margin-right: '-50%';
+    transform: 'translate(-50%, -50%)';
+}
+
+.exam {
+    background-color: aqua;
+    width: 300px;
+    height: 200px;
+}
+
+.Modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: papayawhip;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rebeccapurple;
+}
