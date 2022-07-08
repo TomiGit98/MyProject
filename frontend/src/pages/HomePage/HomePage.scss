@@ -1,9 +1,13 @@
-.home-page {
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page-container__content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    min-height: calc(100vh);
-    background-color: #EEEEEE;
-    margin-top: 50px;
+    background-color: #EEE;
+    min-height: 100vh;
+    padding-top: 50px;
 }

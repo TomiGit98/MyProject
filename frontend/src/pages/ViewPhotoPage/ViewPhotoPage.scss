@@ -1,0 +1,11 @@
+.view-photo-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EEE;
+}
+
+.view-photo-page-container__content-container {
+    padding-top: 50px;
+}

@@ -1,0 +1,438 @@
+.post-wrapper-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 500px;
+}
+
+
+/* Content */
+.post-container__content-container {
+    position: relative;
+    display: flex;
+}
+
+.post-container__content-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-container__header-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Content Header */
+.header-container__profile-container {
+    margin: 10px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-container__profile-container img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid rgba($color: #000000, $alpha: 0.3);
+    object-fit: cover;
+}
+
+.profile-container__name-container {
+    height: 100%;
+    margin-left: 5px;
+}
+
+.profile-container__name-container p {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    padding: 1px 10px 1px 10px;
+    margin-bottom: 5px;
+    font-size: small;
+    font-weight: 500;
+    color: white;
+    width: fit-content;
+}
+
+/* Reaction */
+.content-container__reaction-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.reaction-container__bottom-container {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), black 300%);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.asdasd {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    
+    display: flex;
+    margin: 10px;
+}
+
+.bottom-container__reaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-container__reaction-item svg {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+.bottom-container__reaction-item svg path {
+    fill: white;
+}
+
+.bottom-container__reaction-item p {
+    color: white;
+    font-size: small;
+}
+
+/* HR */
+.hr-container {
+    //margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr-container hr {
+    width: calc(100% - 20px);
+    opacity: 1;
+    background-color: #EEE;
+}
+
+
+/* Useless ----------------------*/
+
+.reaction-container__reaction-item {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.reaction-container__reaction-item svg {
+    height: 35px;
+    width: 35px;
+    fill: white;
+}
+
+/* ---------------------------- */
+
+/* Footer Reaction */
+.footer-container__reaction-container {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    //margin-top: 20px;
+    //border-top: 1px solid #EEE;
+}
+
+.footer-container__reaction-container svg {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.reaction-container__reaction-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.reaction-container__reaction-item-container:hover {
+    background-color: #EEE;
+}
+
+.reaction-container__reaction-item-container p {
+    font-size: small;
+}
+
+/* Footer */
+.post-container__footer-container {
+    background-color: white;
+}
+
+.footer-container__date-container {
+    display: flex;
+}
+
+
+
+.date-container__left-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.date-container__right-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+
+
+.footer-container__date-container p {
+    font-size: small;
+    font-weight: 500;
+}
+
+.footer-container__description-container {
+    padding: 5px 10px 5px 10px;
+}
+
+.footer-container__description-container p {
+    font-size: small;
+    font-weight: 400;
+}
+
+.footer-container__hashtag-container {
+    padding: 5px 10px 10px 10px;
+    display: flex;
+}
+
+.footer-container__hashtag-container a {
+    font-weight: 500;
+    font-size: small;
+    padding-right: 5px;
+    color: #0055EE;
+}
+
+/* Comment */
+.footer-container__comment-container {
+    border-top: 1px solid #EEE;
+    height: 40px;
+    display: flex;
+}
+
+.footer-container__comment-container input {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+    outline: none;
+}
+
+.footer-container__comment-container button {
+    width: 70px;
+    font-weight: 100;
+    color: #DDD;
+    background-color: white
+}
+
+/* Reaction */
+.post-wrapper-container__reaction-container {
+    display: flex;    
+}
+
+.post-wrapper-container__reaction-container svg {
+    height: 40px;
+    width: 40px;
+}
+
+
+/* REACTION */
+.reaction-container__bottom-wide-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bottom-wide-container__row-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.row-container__reaction-item {
+    display: flex;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin: 10px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 20px;
+}
+
+.row-container__reaction-item svg {
+    height: 20px;
+    width: 20px;
+    margin: 5px;   
+}
+
+
+.row-container__reaction-item svg path {
+    fill: white;
+}
+
+
+
+/* Footer Reaction */
+.footer-container__footer-reaction-container {
+    display: flex;
+}
+
+.footer-reaction-container__left-reaction-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.footer-reaction-container__right-reaction-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.reaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    margin-right: 10px;
+}
+
+.reaction-item svg {
+    height: 25px;
+    width: 25px;
+}
+
+.reaction-item--love {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reaction-item--love p {
+    font-size: small;
+    font-weight: 500;
+}
+
+.reaction-item--love svg {
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+}
+
+
+/**/
+.reaction-container__bottom-container {
+    
+}
+
+.reaction-container__bottom-container p {
+    color: white;
+    font-weight: 500;
+    font-size: small;
+}
+
+.bottom-row__reaction-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.reaction-item__svg-container {
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.reaction-item__svg-container svg {
+    height: 23px;
+    width: 23px;
+}
+
+.reaction-item__svg-container svg path {
+    fill: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+.footer-container__reaction-count-container {
+    padding: 0px 10px 0px 10px;
+}
+
+.reaction-count-container__reaction-count-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.reaction-count-container__reaction-count-item p {
+    font-size: small;
+}
+
+.reaction-count-container__reaction-count-item svg {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
